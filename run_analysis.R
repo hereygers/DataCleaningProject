@@ -1,6 +1,7 @@
 ##
 ## This R script will read in the Human Activity Recogintion Using smartphones data set as defined in the course project
 ##
+library(dplyr)
 ##
 ## Step 1: Merge the training and test sets
 ##
