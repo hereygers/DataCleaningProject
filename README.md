@@ -17,13 +17,16 @@ and make sure they are unique
 * generate one data set of all test data i.e. subject, activity, ... measures
 test_set <- cbind(subject_test,y_test,test_set)
 * merge training and test data by means of rbind
+
 #### Step 2: Extract only the mean and standard deviation 
 (Note that I only consider those Columns that where including "mean()" or "std()" in the raw given data set as such
-``sub_obs <- select(observations, matches('subject|Label_No|_mean_|_std_',ignore.case=TRUE))``
+
 #### Step 3: use descriptive activity names by merging in the activity names from file activity_labels.txt
+
 #### Step 4: give descriptive variable names
 variables that start with "Time_" will have the unit seconds
 variables that start with "Frequency_" will have the unit frequency
+
 #### Step 5: create tidy data set 
 Create a tidy data set with the average of each variable grouped by subject and activity 
 and write to the file "result.txt
