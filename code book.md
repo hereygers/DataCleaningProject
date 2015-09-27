@@ -5,9 +5,10 @@ Each row is an observation for a specific subject and activity and the mean valu
 ## Variables
 "subject" 	ID identifying the respective volunteer
 "activity"  Activity Name (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-"Time_BodyAcc_mean_X"	All succeeding variables have the descriptive naming , starting with either "Time_" or "Frequency_" to indicate the Unit , followed by a feature indication e.g. "BodyAcc, and then followed by the indication whether it
-the mean or the std was being applied.  
-"Time_BodyAcc_mean_Y" 
+"Time_BodyAcc_mean_X"	All succeeding variables have the same descriptive naming , starting with either "Time_" or "Frequency_" to indicate whether it is a time domain signal or frequency domain signal, followed by a feature indication e.g. "BodyAcc, and then followed by the indication whether the mean or std was estimated from the signal, and last but not least the direction indication X,Y or Z if appropriate.
+  As all features are normalized and bounded within [-1,1] in the available raw data, so is there mean value.
+
+ "Time_BodyAcc_mean_Y" 
 "Time_BodyAcc_mean_Z" 
 "Time_BodyAcc_std_X" 
 "Time_BodyAcc_std_Y" 

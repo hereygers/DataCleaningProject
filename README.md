@@ -24,8 +24,9 @@ test_set <- cbind(subject_test,y_test,test_set)
 #### Step 3: use descriptive activity names by merging in the activity names from file activity_labels.txt
 
 #### Step 4: give descriptive variable names
-variables that start with "Time_" will have the unit seconds
-variables that start with "Frequency_" will have the unit frequency
+Following descriptive naming is applied for the column names:
+starting with either "Time_" or "Frequency_" to indicate whether it is a time domain signal or frequency domain signal, 
+followed by a feature indication e.g. "BodyAcc, and then followed by the indication whether the mean or std was estimated from the signal, and last but not least the direction indication X,Y or Z if appropriate.
 
 #### Step 5: create tidy data set 
 Create a tidy data set with the average of each variable grouped by subject and activity 
